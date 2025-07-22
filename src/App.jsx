@@ -1,7 +1,17 @@
- export const App = () => {
+
+ import React from "react";
+
+export const App = () => {
  
    return (
-    [<NetflixSries key = "1" />,<NetflixSries key = "2" />,<NetflixSries key = "3" />,<NetflixSries key = "4" />]
+     <React.Fragment>
+       <NetflixSries />
+       <NetflixSries />
+       <NetflixSries />
+       <NetflixSries />
+       <NetflixSries />
+     </React.Fragment>
+    
    )
 };
 
