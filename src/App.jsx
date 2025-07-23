@@ -27,6 +27,13 @@ export const App = () => {
 //? jsx allows you to write  javascript expressions inside curly braces
 // This  includes operations , function calls and other js expressions that produce a value.
 
+//* Function calls
+
+//? function specially those which return jsx canbe invoked directly within your jsx
+
+
+
+
 const NetflixSries = () => {
 
   const name = "Queen of Tears";
@@ -34,6 +41,12 @@ const NetflixSries = () => {
   const summary =
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci doloremque dolorb hbdabduwi nkdhciwuhvibvwwb";
 
+  const Genre = () => {
+
+    const genre = "RomCom";
+    return genre;
+  }
+  
   return (
     <div>
      <div>
@@ -42,6 +55,7 @@ const NetflixSries = () => {
       <h1>Name: {name}</h1>
      <h1>Rating:{5 + 3.2} </h1>
       <p>Summary:{summary}</p>
+      <p>Genre: {Genre()}</p>
   </div>
   )
 
