@@ -17,9 +17,15 @@ export const App = () => {
 
 // Implementing  dynamic values
 
+// 1. using variables
 //? you  can embed any javascript variable within jsx by enclosing 
 // it  in a curly braces{}. The value of the  varibale will be inserted into the DOM 
 // at the respective location
+
+// 2. using expressions
+
+//? jsx allows you to write  javascript expressions inside curly braces
+// This  includes operations , function calls and other js expressions that produce a value.
 
 const NetflixSries = () => {
 
@@ -34,7 +40,7 @@ const NetflixSries = () => {
        <img src="queen_of_tears.jpeg" alt="queen_of_tears.jpeg" width = "40%" height = "40%"git status />
      </div>
       <h1>Name: {name}</h1>
-     <h1>Rating:{rating} </h1>
+     <h1>Rating:{5 + 3.2} </h1>
       <p>Summary:{summary}</p>
   </div>
   )
