@@ -1,16 +1,16 @@
 
- import React from "react";
+ import {Fragment} from "react";
 
 export const App = () => {
  
    return (
-     <React.Fragment>
+     <Fragment>
        <NetflixSries />
        <NetflixSries />
        <NetflixSries />
        <NetflixSries />
        <NetflixSries />
-     </React.Fragment>
+     </Fragment>
     
    )
 };
