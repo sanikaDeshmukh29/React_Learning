@@ -37,6 +37,7 @@ export const App = () => {
 const NetflixSries = () => {
 
   const name = "Queen of Tears";
+  const age = 19;
   const rating = "8.2";
   const summary =
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci doloremque dolorb hbdabduwi nkdhciwuhvibvwwb";
@@ -45,6 +46,21 @@ const NetflixSries = () => {
 
     const genre = "RomCom";
     return genre;
+  }
+
+  if (age > 18) {
+     return (
+    <div>
+     <div>
+       <img src="queen_of_tears.jpeg" alt="queen_of_tears.jpeg" width = "40%" height = "40%"git status />
+     </div>
+      <h1>Name: {name}</h1>
+     <h1>Rating:{5 + 3.2} </h1>
+      <p>Summary:{summary}</p>
+      <p>Genre: {Genre()}</p>
+      <button>Available</button>
+  </div>
+  )
   }
   
   return (
@@ -56,6 +72,7 @@ const NetflixSries = () => {
      <h1>Rating:{5 + 3.2} </h1>
       <p>Summary:{summary}</p>
       <p>Genre: {Genre()}</p>
+      <button>Available</button>
   </div>
   )
 
