@@ -48,20 +48,24 @@ const NetflixSries = () => {
     return genre;
   }
 
-  if (age > 18) {
-     return (
-    <div>
-     <div>
-       <img src="queen_of_tears.jpeg" alt="queen_of_tears.jpeg" width = "40%" height = "40%"git status />
-     </div>
-      <h1>Name: {name}</h1>
-     <h1>Rating:{5 + 3.2} </h1>
-      <p>Summary:{summary}</p>
-      <p>Genre: {Genre()}</p>
-      <button>Available</button>
-  </div>
-  )
-  }
+  // if (age > 18) {
+  //    return (
+  //   <div>
+  //    <div>
+  //      <img src="queen_of_tears.jpeg" alt="queen_of_tears.jpeg" width = "40%" height = "40%"git status />
+  //    </div>
+  //     <h1>Name: {name}</h1>
+  //    <h1>Rating:{5 + 3.2} </h1>
+  //     <p>Summary:{summary}</p>
+  //     <p>Genre: {Genre()}</p>
+  //     <button>Available</button>
+  // </div>
+  // )
+  // }
+
+  // this violates DRY(do not repeat yourself)
+
+  // method - 2
   
   return (
     <div>
@@ -72,7 +76,7 @@ const NetflixSries = () => {
      <h1>Rating:{5 + 3.2} </h1>
       <p>Summary:{summary}</p>
       <p>Genre: {Genre()}</p>
-      <button>Available</button>
+      <button>{age >= 18 ? "Available" : "Not Available"}</button>
   </div>
   )
 
