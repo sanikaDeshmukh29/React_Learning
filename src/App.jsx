@@ -48,9 +48,16 @@ const NetflixSries = () => {
     return genre;
   }
 
-  let canWatch = "Not available";
+  // let canWatch = "Not available";
+  // if (age >= 18) canWatch = "Avaialable";
 
-  if (age >= 18) canWatch = "Avaialable";
+
+  const canWatch = () => {
+
+    if (age >= 18) return "Avaialable";
+    return "Not available";
+
+  }
 
   // if (age > 18) {
   //    return (
@@ -71,7 +78,14 @@ const NetflixSries = () => {
 
   // method - 2
   
+  //method - 3
   // sometimes you might have very difficult if conditions, for that there  are some solutions
+
+  //method - 4
+  //Solutions can be better as it prevents cluttering of variables outside and 
+  //encapsulates such logic inside a function
+
+
 
 
   return (
@@ -83,7 +97,7 @@ const NetflixSries = () => {
      <h1>Rating:{5 + 3.2} </h1>
       <p>Summary:{summary}</p>
       <p>Genre: {Genre()}</p>
-      <button>{canWatch}</button>
+      <button>{canWatch()}</button>
       {/* <button>{age >= 18 ? "Available" : "Not Available"}</button> */}
   </div>
   )
