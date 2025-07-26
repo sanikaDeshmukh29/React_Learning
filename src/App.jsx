@@ -48,6 +48,10 @@ const NetflixSries = () => {
     return genre;
   }
 
+  let canWatch = "Not available";
+
+  if (age >= 18) canWatch = "Avaialable";
+
   // if (age > 18) {
   //    return (
   //   <div>
@@ -67,6 +71,9 @@ const NetflixSries = () => {
 
   // method - 2
   
+  // sometimes you might have very difficult if conditions, for that there  are some solutions
+
+
   return (
     <div>
      <div>
@@ -76,7 +83,8 @@ const NetflixSries = () => {
      <h1>Rating:{5 + 3.2} </h1>
       <p>Summary:{summary}</p>
       <p>Genre: {Genre()}</p>
-      <button>{age >= 18 ? "Available" : "Not Available"}</button>
+      <button>{canWatch}</button>
+      {/* <button>{age >= 18 ? "Available" : "Not Available"}</button> */}
   </div>
   )
 
