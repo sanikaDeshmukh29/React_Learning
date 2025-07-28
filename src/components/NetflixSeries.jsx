@@ -17,7 +17,7 @@
 
 
 
-const NetflixSries = () => {
+export const NetflixSries = () => {
 
   const name = "Queen of Tears";
   const age = 19;
@@ -82,9 +82,15 @@ const NetflixSries = () => {
       <p>Genre: {Genre()}</p>
       <button>{canWatch()}</button>
       {/* <button>{age >= 18 ? "Available" : "Not Available"}</button> */}
+      
   </div>
   )
 
 };
 
-export default NetflixSries;
+export const Footer = () => {
+    return <p>@copyrightedbySanika</p>;
+}
+
+// export default NetflixSries;
+// here bu using default export you can export only once but with named export you can export multiple times
