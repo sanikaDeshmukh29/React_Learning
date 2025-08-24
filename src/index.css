@@ -71,15 +71,3 @@ li{
   grid-template-columns: repeat(3,1fr);
 }
 
-.rating{
-  padding: 2%;
-  border-radius: 40%;
-}
-
-.superhit{
-  background-color: lightgreen;
-}
-
-.average{
-  background-color: rgb(190, 135, 34);
-}

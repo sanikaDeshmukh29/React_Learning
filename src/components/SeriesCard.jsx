@@ -1,4 +1,4 @@
-
+import styles from "./NetflixSeries.module.css"
 
 export const SeriesCard = ({ data }) => {
 
@@ -11,17 +11,17 @@ export const SeriesCard = ({ data }) => {
         backgroundColor : rating >= 8.5 ? "lightgreen" : "rgb(190, 135, 34)"
     }
 
-    const rating_condition = rating >= 8.5 ? "superhit" : "average";
+    const rating_condition = rating >= 8.5 ? styles.superhit : styles.average;
 
     return (
-                    <li className="card">
+        <li className={styles.card}>
                         <div>
                             <img src={img_url} alt={name} width="40%" height="40%" />
                         </div>
-                        <div className="card-content">
+                        <div className= {styles['card-content']}>
                         <h1>Name: {name}</h1>
                 <h1>Rating:
-                    <span className={`rating ${rating_condition}`}>
+                    <span className={`${styles.rating} ${rating_condition}`}>
                         {rating}
                     </span>
                      </h1>
